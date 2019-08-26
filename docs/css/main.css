@@ -767,7 +767,7 @@ ul p {
   position: relative;
   text-align: center;
   background-color: black;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, black 100%), linear-gradient(to top, rgba(0, 0, 0, 0.2) 60%, black 100%), linear-gradient(to right, rgba(0, 0, 0, 0) 90%, black 100%), linear-gradient(to left, rgba(0, 0, 0, 0) 90%, black 100%), url(http://kmicinski.com//cs245/assets/img/bannershort.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, black 100%), linear-gradient(to top, rgba(0, 0, 0, 0.2) 60%, black 100%), linear-gradient(to right, rgba(0, 0, 0, 0) 90%, black 100%), linear-gradient(to left, rgba(0, 0, 0, 0) 90%, black 100%), url(http://kmicinski.com//cis700/assets/img/bannershort.jpeg);
   background-size: 800px 300px;
   height: 300px;
   background-repeat: no-repeat;
