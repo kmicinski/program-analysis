@@ -3,10 +3,10 @@
   <channel>
     <title>CIS700</title>
     <description>(Spring '19) Principles of Programming Languages (CMSC245 at Haverford College)</description>
-    <link>http://kmicinski.com/cis700/</link>
-    <atom:link href="http://kmicinski.com/cis700/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Aug 2019 15:29:19 -0400</pubDate>
-    <lastBuildDate>Mon, 26 Aug 2019 15:29:19 -0400</lastBuildDate>
+    <link>http://kmicinski.com/program-analysis/</link>
+    <atom:link href="http://kmicinski.com/program-analysis/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 26 Aug 2019 15:31:00 -0400</pubDate>
+    <lastBuildDate>Mon, 26 Aug 2019 15:31:00 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -63,8 +63,8 @@ arrays that will give O(n) time for &lt;code class=&quot;highlighter-rouge&quot;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 01 Feb 2019 00:00:00 -0500</pubDate>
-        <link>http://kmicinski.com/cis700/projects/1</link>
-        <guid isPermaLink="true">http://kmicinski.com/cis700/projects/1</guid>
+        <link>http://kmicinski.com/program-analysis/projects/1</link>
+        <guid isPermaLink="true">http://kmicinski.com/program-analysis/projects/1</guid>
         
         
         <category>assignment</category>
@@ -162,8 +162,8 @@ clang++ -std=c++14 -Wall -o ./output ./tests/&amp;lt;testname&amp;gt;.cpp
 
 </description>
         <pubDate>Sun, 20 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://kmicinski.com/cis700/projects/0</link>
-        <guid isPermaLink="true">http://kmicinski.com/cis700/projects/0</guid>
+        <link>http://kmicinski.com/program-analysis/projects/0</link>
+        <guid isPermaLink="true">http://kmicinski.com/program-analysis/projects/0</guid>
         
         
         <category>assignment</category>
@@ -240,8 +240,8 @@ then calculate the output and print it.&lt;/p&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;test.py&lt;/code&gt; to see how the tests are being run.&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://kmicinski.com/cis700/labs/0</link>
-        <guid isPermaLink="true">http://kmicinski.com/cis700/labs/0</guid>
+        <link>http://kmicinski.com/program-analysis/labs/0</link>
+        <guid isPermaLink="true">http://kmicinski.com/program-analysis/labs/0</guid>
         
         
         <category>assignment</category>
@@ -253,8 +253,8 @@ then calculate the output and print it.&lt;/p&gt;
         <description>&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=w7wLvLb2qCw&quot;&gt;Watch the video here&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://kmicinski.com/cis700/videos/vm</link>
-        <guid isPermaLink="true">http://kmicinski.com/cis700/videos/vm</guid>
+        <link>http://kmicinski.com/program-analysis/videos/vm</link>
+        <guid isPermaLink="true">http://kmicinski.com/program-analysis/videos/vm</guid>
         
         
       </item>
@@ -288,8 +288,8 @@ should be able to do it after watching the first video lecture.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://kmicinski.com/cis700/intro</link>
-        <guid isPermaLink="true">http://kmicinski.com/cis700/intro</guid>
+        <link>http://kmicinski.com/program-analysis/intro</link>
+        <guid isPermaLink="true">http://kmicinski.com/program-analysis/intro</guid>
         
         
       </item>
@@ -313,8 +313,8 @@ with:&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://kmicinski.com/cis700/videolectures/1</link>
-        <guid isPermaLink="true">http://kmicinski.com/cis700/videolectures/1</guid>
+        <link>http://kmicinski.com/program-analysis/videolectures/1</link>
+        <guid isPermaLink="true">http://kmicinski.com/program-analysis/videolectures/1</guid>
         
         
       </item>
