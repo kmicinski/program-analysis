@@ -1,0 +1,292 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+
+// Our variables
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 300;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     20px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$baseurl: '{{ site.baseurl }}';
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+
+#curpic {
+    z-index: 2;
+}
+
+blockquote {
+    margin-top : 10px;
+    margin-left : 20px;
+    background-color: #f6ebc1;
+    border-left: 5px solid #fce27c;
+    padding: .5em 1em;
+}
+
+.smallright {
+  float: right;
+  width: 350px;
+}
+
+article img {
+  margin: auto;
+  width: 80%;
+}
+
+.main p {
+  text-indent: 0px
+}
+
+.post-link h2 { 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main h2 {
+  margin-top: .7em;
+  margin-bottom: .3em;
+}
+
+article p { 
+} 
+
+ul p { 
+   text-indent: 0px;
+}
+
+@media (min-width: 768px) {
+    .bs-docs-masthead {
+        //padding: 80px 0;
+    }
+}
+
+.jumbopic {
+    height: 100px;
+}
+
+.introtext h1,h2,h3,h4 { 
+    margin-bottom: 2px;
+}
+
+.introtext ul li { 
+    display: inline
+}
+
+.introtext h1,h2,h3,h4 {
+    //text-shadow: 2px 2px 2px rgba(255,255,255,.5);
+}
+
+.areadesc {
+    vertical-align: top;
+    text-align: center;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.areadesc h2,h4 {
+    margin-top: 0px;
+}
+
+.areadescleft {
+    vertical-align: top;
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.areadesc hr {
+    border-top: 2px solid #ccc;
+}
+
+.post-link h2 { 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+//p {
+//  text-indent: 1em;
+//}
+
+#topcontainer {
+    max-width: $content-width;
+    width: $content-width;
+    left: 50%;
+    position: absolute;
+    top: 0px;
+}
+
+#topcontent {
+    width: $content-width;        
+    position: absolute;
+    text-align: left;
+    top: 340px;
+    color: #fff;
+    left: -50%
+}
+
+#mainpagecontent {
+    margin-top: 6.5em;
+}
+
+#mainpgvenn {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#mainwrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $content-width;  //width
+}
+
+#mainwrapper h2 {
+    margin-top: 1em;
+    margin-bottom: .4em;
+}
+
+#mainwrapper h3 {
+    margin-top: .7em;
+    margin-bottom: .4em;
+}
+
+#topblurb {
+    margin-top: 25px;
+    color: black;
+}
+
+#compsecurity {
+  text-shadow: 1px 1px 2px #111, 0 0 25px #828282, 0 0 5px white
+}
+
+.introtext a {
+    color: white;
+}
+
+.blackhat {
+  color: black;
+  //     text-shadow: 2px 2px 4px #000000;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  //text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffffff;
+}
+
+.introtext a:hover {
+    color: cyan;
+}
+
+.researchareas {
+    witdh: 500px;
+}
+
+.introtext {
+  padding-top: 20px;
+  color: white;
+}
+
+#practice {
+  padding-top: 60px;
+}
+
+.introtext h1 {
+  font-size: 60px;
+}
+
+.introtext h2 {
+  font-size: 30px;
+}
+
+
+.bs-docs-header {
+    position: relative;
+    //padding: 30px 15px;
+    text-align: center;
+    background-color: black; // #212121;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1.0) 100%), // 33
+    linear-gradient(to top, rgba(0, 0, 0, .2) 60%, rgba(0, 0, 0, 1.0) 100%), // 33
+    linear-gradient(to right, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1.0) 100%), 
+    linear-gradient(to left, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1.0) 100%), 
+    url({{ "/assets/img/bannershort.jpeg" | absolute_url }});
+    background-size: 800px 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#researchareas {
+    magin: auto;
+}
+
+
+.post-link {
+    font-size: 12pt;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.social-media-list .glyphicon-calendar {
+    margin-right: 5px;
+}
+
+.tagbox {
+    font-size: 11pt;
+}
+
+/* .post-preview { */
+/*     position: relative; */
+/* } */
+
+/* .post-preview ::after { */
+/*     content  : ""; */
+/*     position : absolute; */
+/*     z-index  : 1; */
+/*     bottom   : 0; */
+/*     left     : 0; */
+/*     pointer-events   : none; */
+/*     background-image : linear-gradient(to bottom,  */
+/*                                        rgba(255,255,255, 0),  */
+/*                                        rgba(255,255,255, 1) 90%); */
+/*     width    : 100%; */
+/*     height   : 4em; */
+/* } */

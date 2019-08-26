@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="masthead">
+      <div class="bs-docs-masthead" >
+        <div class="bs-docs-header">
+          <div class="container">
+            <div class="wrapper">
+              <div class="introtext">
+                <h1 name="compsecurity">Principles of</h1>
+                <h1 name="compsecurity">Programming Languages</h1>
+                <!--<h2 id="practice""><span class="blackhat">Principles</span> and Implementation</h2>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script>
+      $(document).ready(function() {
+      var areadescs = [$("#secdesc"),$("#pldesc"),$("#hcidesc")];
+      var areas = $("#areadesc");
+      $("areastr").css("min-height",
+                 (Math.min.apply(null, areadescs.map(function(f) { return f.height(); }))));
+      [$("#circle1"),$("#circle2"),$("#circle3")]
+        .forEach(function(f,i) {
+            f.mouseenter(function() {
+            f.css({"fill-opacity": .7});
+            areas.css({"display": "none"});
+            areadescs[i].css({"display": "table-cell"});
+          });
+          f.mouseleave(function() {
+            areadescs[i].css({"display": "none"});
+            areas.css({"display": "table-cell"});
+            f.css({"fill-opacity": .4});
+          });
+        });
+      });
+    </script>
+
+  </body>
+
+</html>

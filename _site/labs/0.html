@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lab 0: Autograder Setup and Intro to C++</title>
+  <meta name="description" content="This lab will be graded via the autograder. You must email me to getyour autograder credentials.">
+
+  <link rel="stylesheet" href="http://kmicinski.com/cs245/css/main.css">
+  <link rel="canonical" href="http://kmicinski.com/cs245/labs/0">
+  <link rel="alternate" type="application/rss+xml" title="CS245" href="http://kmicinski.com/cs245/feed.xml">
+</head>
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href=http://kmicinski.com//cs245/>CS245</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/assignments/">Assignments</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/blog/">Posts</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/resources">Resources</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/schedule/">Schedule</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/syllabus/">Syllabus</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Lab 0: Autograder Setup and Intro to C++</h1>
+    <h3><b>Project due date: <time datetime="2019-01-24T00:00:00-05:00">Jan 24,
+    2019 (11:59PM Eastern)</time></b></h3>
+  </header>
+
+  <div class="post-content writeup-content" itemprop="articleBody">
+    <p>This lab will be graded via the autograder. You must email me to get
+your autograder credentials.</p>
+
+<h2 id="setting-up-a-vm">Setting up a VM</h2>
+
+<p>If you are on Windows or want to set up a virtual machine, <a href="https://www.youtube.com/watch?v=w7wLvLb2qCw&amp;t=1018s">watch the
+video here.</a></p>
+
+<p>If you are using Mac OSX consider setting up
+<a href="https://brew.sh/">Homebrew</a>–I use it and it is often very simple.</p>
+
+<h2 id="getting-the-autograder">Getting the autograder</h2>
+
+<p>Follow the steps at the <a href="https://www.youtube.com/watch?v=w7wLvLb2qCw&amp;t=1018s">end of the previous
+video</a>. Get the
+autograder by cloning the submission repo
+<a href="https://github.com/kmicinski/submit">here</a>. Be sure to read the
+instructions in that repository (in particular, read about how to make
+sure it’s working).</p>
+
+<h2 id="get-lab0">Get lab0</h2>
+
+<p>Create a <em>new</em> directory named <code class="highlighter-rouge">lab0</code> somewhere on your system (e.g.,
+<code class="highlighter-rouge">~/projects/lab0</code>) and copy submit.py into that directory. Then run
+submit.py and follow the steps it shows. You will need your
+credentials (again, you get those by emailing me).</p>
+
+<p>The autograder uses the directory name to decide which project to
+download, so if you want to be working on lab 0, make sure your
+directory is named <code class="highlighter-rouge">lab0</code>.</p>
+
+<h2 id="completing-the-lab">Completing the lab</h2>
+
+<p>The task in the lab asks you to reverse an array. This should not be
+too hard to figure out, and I show hints of it if you watch the intro
+to C++ video. Basically, you want to loop over half the array and
+exchange things at the right positions. As a hint, division in C++
+truncates down (so <code class="highlighter-rouge">3/2 == 1</code> for integers).</p>
+
+<p>If you need more help completing your lab, please be sure to read Part
+1 of the <a href="https://isocpp.org/tour">C++ Tour</a> (book available as free
+PDF).</p>
+
+<h2 id="running-the-lab-yourself">Running the lab yourself</h2>
+
+<p>If you want to test your program as you go, you first need to compile
+it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Compile to a binary file named reverse
+clang++ reverse.cpp -o reverse
+</code></pre></div></div>
+
+<p>And then run via…</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Actually run reverse
+./reverse
+</code></pre></div></div>
+
+<p>Then you can type in a list of numbers. To end your typing type in
+control-D (i.e., hit D while holding down control). Your program will
+then calculate the output and print it.</p>
+
+<p>You can also add extra tests of your own. Feel free to look at
+<code class="highlighter-rouge">test.py</code> to see how the tests are being run.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    
+
+    <!-- <h2 class="footer-heading">CS245</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>CS245</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>(Spring '19) Principles of Programming Languages (CMSC245 at Haverford College)</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<script src=http://kmicinski.com//cs245/bower_components/jquery/dist/jquery.min.js></script>
+<script src=http://kmicinski.com//cs245/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js></script>
+
+
+  </body>
+
+</html>

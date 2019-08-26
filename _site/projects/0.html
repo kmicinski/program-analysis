@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Project 0: C++ Intro and Association Lists</title>
+  <meta name="description" content="In this project you will be implementing association lists inC++. This project will give you some basic experience with buildingdata structures in C++ (one o...">
+
+  <link rel="stylesheet" href="http://kmicinski.com/cs245/css/main.css">
+  <link rel="canonical" href="http://kmicinski.com/cs245/projects/0">
+  <link rel="alternate" type="application/rss+xml" title="CS245" href="http://kmicinski.com/cs245/feed.xml">
+</head>
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href=http://kmicinski.com//cs245/>CS245</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/assignments/">Assignments</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/blog/">Posts</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/resources">Resources</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/schedule/">Schedule</a>
+          
+        
+          
+          <a class="page-link" href="http://kmicinski.com//cs245/syllabus/">Syllabus</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Project 0: C++ Intro and Association Lists</h1>
+    <h3><b>Project due date: <time datetime="2019-01-31T00:00:00-05:00">Jan 31,
+    2019 (11:59PM Eastern)</time></b></h3>
+  </header>
+
+  <div class="post-content writeup-content" itemprop="articleBody">
+    <p>In this project you will be implementing association lists in
+C++. This project will give you some basic experience with building
+data structures in C++ (one of its most common uses). This will likely
+require that you do some reading on your own to understand how C++
+classes work.</p>
+
+<h2 id="getting-the-project">Getting the project</h2>
+
+<p>Follow the steps at the <a href="https://www.youtube.com/watch?v=w7wLvLb2qCw&amp;t=1018s">end of the previous
+video</a>. Get the
+autograder by cloning the submission repo
+<a href="https://github.com/kmicinski/submit">here</a>. Be sure to read the
+instructions in that repository (in particular, read about how to make
+sure it’s working).</p>
+
+<p>Let’s say that you have the autograder submit script stored in
+<code class="highlighter-rouge">~/projects/submit/submit.py</code>. Then you will create a new directory,
+<code class="highlighter-rouge">p0</code>, for this project somewhere. Here’s what I did to set up the
+projects (note that I put them in <code class="highlighter-rouge">~/projects/cs245-playground</code>, I
+recommend you just use a folder like ~/projects/cs245/p0`):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Kristophers-Air:projects kmicinski$ mkdir cs245-playground
+Kristophers-Air:projects kmicinski$ cd cs245-playground/
+Kristophers-Air:cs245-playground kmicinski$ mkdir p0
+Kristophers-Air:cs245-playground kmicinski$ cd p0/
+Kristophers-Air:p0 kmicinski$ cp ~/projects/submit/submit.py .
+Kristophers-Air:p0 kmicinski$ python3 submit.py
+
+   _____       __              __ __
+  / ___/__  __/ /_  ____ ___  /_/ /_
+  \__ \/ / / / __ \/ __ `__ \/ / __/
+ ___/ / /_/ / /_/ / / / / / / / /_
+/____/\____/_____/_/ /_/ /_/_/\__/   (by Kris+Tom)
+
+? This directory is empty, would you like to initialize a new project?
+  Yes
+&gt;&gt;&gt; Initializing `credentials` and `.gitignore` files &lt;&lt;&lt;
+
+    Note: it is very important that you do not do not
+    distribute the `credentials` file. It stores your username and
+    password. Please avoid sending it to anyone (doing so will be
+    considered a violation of the honor code) or checking it into
+    git.
+? What is your username?  ktest
+? What is your password?  **********
+Verifying password...
+&gt;&gt;&gt; Login successful! &lt;&lt;&lt;
+Downloading available projects...
+&gt;&gt;&gt; Here are the available projects for your course &lt;&lt;&lt;
+
+    You must select the project whose shortname is the same as the
+    name of this directory. If you want to work on a project not
+    listed here (e.g., `proj0`), you must crate an empty directory
+    with that name and run `submit.py` from that directory.
+? Here are the available assignments, confirm you will select the curr
+&gt;&gt;&gt; Downloading starter files... &lt;&lt;&lt;
+&gt;&gt;&gt; Unpacking starter files... &lt;&lt;&lt;
+Executing tar xvvf starter.tar.gz; rm starter.tar.gz
+🎉🎉🎉 Starter files now ready! 🎉🎉🎉
+
+     You are now all set up. We also recommend creating a (private) git
+     ...
+</code></pre></div></div>
+
+<h2 id="completing-the-project">Completing the project</h2>
+
+<p>Project instructions are given in the top of file
+<code class="highlighter-rouge">AssocList.h</code>. Please read the instructions there and complete the
+methods marked <code class="highlighter-rouge">TODO</code> in the file. The purpose of the lab is to have
+you implement association lists: key/value maps based on lists of
+(key,value) pairs.</p>
+
+<h2 id="running-the-lab-yourself">Running the lab yourself</h2>
+
+<p>If you want to test your program as you go, you first need to compile
+a test. Each test file is written as one of the file in the <code class="highlighter-rouge">tests</code>
+folder. You are encouraged to write your own, and the project includes
+secret tests (that you won’t be given)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Compile the test and create file output
+clang++ -std=c++14 -Wall -o ./output ./tests/&lt;testname&gt;.cpp
+# Run the test
+./output
+</code></pre></div></div>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    
+
+    <!-- <h2 class="footer-heading">CS245</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>CS245</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>(Spring '19) Principles of Programming Languages (CMSC245 at Haverford College)</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<script src=http://kmicinski.com//cs245/bower_components/jquery/dist/jquery.min.js></script>
+<script src=http://kmicinski.com//cs245/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js></script>
+
+
+  </body>
+
+</html>

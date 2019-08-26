@@ -1,0 +1,26 @@
+---
+title: Assignments
+layout: page
+---
+
+<div class="home">
+
+  <h2 class="page-heading">Assignments</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    {% if post.categories contains 'assignment' %}
+      <li>
+        <span class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }} {% if page.duedate %} • <b>(Due <span itemprop="date">{{ page.duedate | date: "%b %-d, %Y" }}</span></span>{% endif %}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+        </h3>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+</div>
+

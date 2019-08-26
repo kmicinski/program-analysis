@@ -1,0 +1,18 @@
+# Site settings
+title: CS245
+baseurl: ""# "cybersecurity-course"
+url: ""#"http://kmicinski.com/"
+description: "(Spring '19) Principles of Programming Languages (CMSC245 at Haverford College)"
+permalink: pretty
+
+# Build settings
+#markdown: redcarpet
+
+# Build posts to appear in the future
+future: true
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

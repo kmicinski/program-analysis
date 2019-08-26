@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="350" height="300" xmlns="http://www.w3.org/2000/svg">
+    <circle fill-opacity=".4" r="100" cx="100" cy="100" fill="red"
+            id="circle1" />
+    <circle fill-opacity=".4" r="100" cx="250" cy="100" fill="green" 
+            id="circle2" />
+    <circle fill-opacity=".4" r="100" cx="175" cy="200" fill="blue" 
+            id="circle3" />
+</svg>
+<!--   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="68" x="217" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">PL</text> -->
