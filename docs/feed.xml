@@ -3,10 +3,10 @@
   <channel>
     <title>CIS700</title>
     <description>(Fall '19) Program Analysis: Foundations and Applications (CIS 700 at Syracuse *)</description>
-    <link>http://kmicinski.com/cis700/</link>
-    <atom:link href="http://kmicinski.com/cis700/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Sep 2019 15:04:25 -0400</pubDate>
-    <lastBuildDate>Wed, 04 Sep 2019 15:04:25 -0400</lastBuildDate>
+    <link>http://kmicinski.com/program-analysis/</link>
+    <atom:link href="http://kmicinski.com/program-analysis/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 04 Sep 2019 15:06:07 -0400</pubDate>
+    <lastBuildDate>Wed, 04 Sep 2019 15:06:07 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -20,8 +20,8 @@ their names must be signed on the project, and you must also email me
 (Kris) a rough breakdown of what each participant did.&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Sep 2019 00:00:00 -0400</pubDate>
-        <link>http://kmicinski.com/cis700/homework/0</link>
-        <guid isPermaLink="true">http://kmicinski.com/cis700/homework/0</guid>
+        <link>http://kmicinski.com/program-analysis/homework/0</link>
+        <guid isPermaLink="true">http://kmicinski.com/program-analysis/homework/0</guid>
         
         
         <category>assignment</category>
