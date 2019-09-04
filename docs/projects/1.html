@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Project 1: C++ Memory Management</title>
-  <meta name="description" content="(Posted as p1 on the autograder.)">
+  <title>Homework 1: Metacircular Interpreter Implementation</title>
+  <meta name="description" content="">
 
-  <link rel="stylesheet" href="http://kmicinski.com/program-analysis/css/main.css">
-  <link rel="canonical" href="http://kmicinski.com/program-analysis/projects/1">
-  <link rel="alternate" type="application/rss+xml" title="CIS700" href="http://kmicinski.com/program-analysis/feed.xml">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/projects/1">
+  <link rel="alternate" type="application/rss+xml" title="CIS700" href="http://localhost:4000/feed.xml">
 </head>
 
   <body>
@@ -19,7 +19,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href=http://kmicinski.com//program-analysis/>CIS700</a>
+    <a class="site-title" href=http://localhost:4000/>CIS700</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -33,29 +33,29 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="http://kmicinski.com//program-analysis/assignments/">Assignments</a>
+          <a class="page-link" href="http://localhost:4000/assignments/">Assignments</a>
           
         
           
-          <a class="page-link" href="http://kmicinski.com//program-analysis/blog/">Posts</a>
-          
-        
-          
-        
+          <a class="page-link" href="http://localhost:4000/blog/">Posts</a>
           
         
           
         
           
-          <a class="page-link" href="http://kmicinski.com//program-analysis/resources">Resources</a>
+        
           
         
           
-          <a class="page-link" href="http://kmicinski.com//program-analysis/schedule/">Schedule</a>
+          <a class="page-link" href="http://localhost:4000/resources">Resources</a>
           
         
           
-          <a class="page-link" href="http://kmicinski.com//program-analysis/syllabus/">Syllabus</a>
+          <a class="page-link" href="http://localhost:4000/schedule/">Schedule</a>
+          
+        
+          
+          <a class="page-link" href="http://localhost:4000/syllabus/">Syllabus</a>
           
         
       </div>
@@ -70,62 +70,13 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Project 1: C++ Memory Management</h1>
+    <h1 class="post-title" itemprop="name headline">Homework 1: Metacircular Interpreter Implementation</h1>
     <h3><b>Project due date: <time datetime="2019-02-14T00:00:00-05:00">Feb 14,
     2019 (11:59PM Eastern)</time></b></h3>
   </header>
 
   <div class="post-content writeup-content" itemprop="articleBody">
-    <p>(Posted as <code class="highlighter-rouge">p1</code> on the autograder.)</p>
-
-<p>This project will develop your skills on structuring object-oriented
-software via class hierarchies.</p>
-
-<p>This project has you build an array implementation that gains
-efficiency by doubling the array size (rather than just extending by
-1) when the array needs to be extended. This will give you
-implementation <a href="https://stackoverflow.com/questions/200384/constant-amortized-time">constant amortized insertion
-time</a>
-time. I.e., if you perform <code class="highlighter-rouge">n</code> insertions, the runtime will be of
-O(n), rather than O(n^2).</p>
-
-<p>This project contains a few files, each implementing classes in a
-class hierarchy you will flesh out:</p>
-
-<ul>
-  <li>
-    <p><code class="highlighter-rouge">IArray.h</code> – This is an interface. Although C++ does not
-technically have an <code class="highlighter-rouge">interface</code> keyword (as in Java), the term
-“interface” refers to a class which has no concrete method
-implementations (i.e., every method is pure virtual) and contains no
-data members. You do not need to modify this file, but you should
-read it to get an idea of how the rest of the project works.</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">AArray.h</code> – An abstract class (one which contains a mix of
-unimplemented and concrete methods) that implements a few methods
-using other methods (some of which are undefined). TODO: Extend
-<code class="highlighter-rouge">AArray.h</code>.</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">CArray.h</code> – A slow (i.e., not-doubling-size) implementation of
-resizing arrays that will give O(n^2) time for <code class="highlighter-rouge">n</code> insertions. TODO:
-Extend <code class="highlighter-rouge">CArray.h</code>.</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">SArray.h</code> – A faster (doubling-size) implementation of resizing
-arrays that will give O(n) time for <code class="highlighter-rouge">n</code> insertions.</p>
-  </li>
-</ul>
-
-<p>Your job is to implement these last three classes.</p>
-
-<p>You will need to read about:</p>
-<ul>
-  <li>Exceptions and try</li>
-  <li>Abstract classes</li>
-  <li>Virtual methods</li>
-</ul>
+    
 
   </div>
 
@@ -167,8 +118,8 @@ arrays that will give O(n) time for <code class="highlighter-rouge">n</code> ins
 
 </footer>
 
-<script src=http://kmicinski.com//program-analysis/bower_components/jquery/dist/jquery.min.js></script>
-<script src=http://kmicinski.com//program-analysis/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js></script>
+<script src=http://localhost:4000/bower_components/jquery/dist/jquery.min.js></script>
+<script src=http://localhost:4000/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js></script>
 
 
   </body>
