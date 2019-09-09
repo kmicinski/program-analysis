@@ -20,29 +20,18 @@ layout: mainpage
 <div class="infomatter">
 <table class="infotablestyle">
 <tr><td>Course Number</td>
-    <td>CMSC 245 (Spring 2019) at <a href="https://www.haverford.edu/computer-science/">Haverford College</a></td>
+    <td>CIS 700 (Fall 2019) at <a href="http://eng-cs.syr.edu/our-departments/electrical-engineering-and-computer-science/">Syracuse University</a></td>
 </tr>
 <tr><td>Instructor</td>
     <td><a href="http://kmicinski.com">Kristopher Micinski</a></td>
 </tr>
-<tr><td>Teaching Assistants</td>
-    <td>Jocelyn Dunkley</td>
-</tr>
-<tr>
-    <td></td>
-    <td>Myriam Benkoussa</td>
-</tr>
 <tr>
     <td>Times</td>
-    <td>Mon/Wed 12:45-2:15 <i>Lecture</i>  Tu 10:30 / 12:30 <i>Labs</i></td>
+    <td>Mon/Wed 3:45-5:15 <i>Lecture</i></td>
 </tr>
 <tr>
     <td>Office Hours</td>
-    <td>Mo/Wed after class and by appointment</td>
-</tr>
-<tr>
-    <td>TA Office Hours</td>
-    <td>TBA</td>
+    <td>Thursdays, 10:30AM-11:30AM</td>
 </tr>
 </table>
 <img class="krispic" src="/assets/img/krisbw.jpg">
@@ -50,45 +39,47 @@ layout: mainpage
     
 ## Introduction 
 
-Have you ever asked yourself what principles underly programming
-languges? How to make an informed decision about which language to
-use? Why are some languages apparently faster than others?
+Program analyses answer questions about the behavior of programs. For
+example, a control-flow analysis for an object-oriented language could
+be used to answer the question: at a given (polymorphic) method
+invocation, which method(s) may be invoked? Such analyses power
+compiler optimizations which replace the (comparatively) expensive
+indirect method invocation with a cheaper direct call.  Critically,
+program analyses reason about all possible program behaviors in order
+to make such optimizations safely. While this seemingly violates the
+halting problem, program analysis tools gain decidability by making
+approximations: the analysis must occasionally give imprecise results
+to soundly reason about all possible executions.
 
-These are the kinds of questions we're going to answer in this
-class. Together, we'll drill into how the computer executes programs,
-gradually pulling apart the complexities involved in turning your
-programs from a string of characters to operations performed by your
-processor.
+This course will teach students how to systematically build, apply,
+and evaluate program analyses in a wide variety of languages and
+paradigms (functional, imperative, relational, etc...). We will begin
+by studying the foundations of formal language semantics. To help
+ground this theory in practice, students will implement interpreters
+for several core programming languages (core Scheme, Featherweight
+Java, etc...).  Then, we will move on to building “abstract”
+interpreters, which execute programs not with concrete inputs (e.g.,
+the number 5) but instead special abstract values which approximate a
+(possibly infinite) set of concrete values (e.g., the set of positive
+integers). This allows us to generalize a program’s behavior on all
+possible inputs.
 
-To do this, we'll learn languages at three different levels:
+All program analyses must at some point approximate program
+behavior. For example, one (useless but correct) analysis might simply
+say “every function could return every possible value if it terminates
+at all.” Clearly, this would not be a very useful analysis, so
+analysis designers must balance analysis precision with analysis
+complexity. A focus of the course will be to teach students the
+primary axes of analysis sensitivity (e.g., call sensitivity, object
+sensitivity) and help understand the ramifications of language
+features (e.g., classes, higher-order functions, etc…) on analysis
+performance.
 
-- The low level (assembly): how the processor pushes around bits to
-  perform the most basic of tasks (arithmetic, moving data, etc..)
-
-- The middle level (C++): how we can leverge low-level niceties (such
-  as performance), but retain a structured language so we can scale
-  our ideas to large software engineering tasks.
-
-- The high level (Scheme / Racket / Datalog): how we can strategically
-  ignore the lower level facilties and focus on the high-level essence
-  of the problems we want to solve.
-
-The lower-level the language, the more complexity we'll deal with (in
-terms of having to understand what the computer is doing).  So an
-auxiliary benefit of this class is that you'll have to learn more
-about how computers work. Once we understand what the computer's doing
-at a low level, we'll be able to exploit that understanding by writing
-highly efficient code. Dually, understanding concepts from
-higher-level languages will teach us how to build better
-abstractions. We'll even get to the point where we're extending the
-languages we use on a day-to-day basis and building new ones.
-
-The goal of this course is to teach you both the nuts and bolts of
-languages and to help built intuition about programming paradigms in a
-broadly construed manner. When you're done, you still won't know every
-language out there. But we hope that you'll be able to thoughtfully
-articulate why you choose the language you did, and have enough
-intuition to pick up new languages very quickly.
+Logistically, the course will involve several individual projects
+implementing and evaluating program analyses on several prototypical
+languages (e.g., core Scheme), alongside a more ambitious capstone
+project that engineers an analysis for a larger language (such as
+Java).
 
 ## Course Structure
 
