@@ -1,3 +1,3 @@
-# CS245 -- Spring 2019 at Haverford College
+# Program Analysis -- CIS 700 at Syracuse U (Fall '19)
 
-Website and slides for CS245 and Haverford College
+Website and slides for CIS700 at Syracuse
