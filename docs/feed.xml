@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CS245</title>
-    <description>(Spring '19) Principles of Programming Languages (CMSC245 at Haverford College)</description>
-    <link>http://kmicinski.com/cs245/</link>
-    <atom:link href="http://kmicinski.com/cs245/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Dec 2019 18:14:13 -0500</pubDate>
-    <lastBuildDate>Fri, 20 Dec 2019 18:14:13 -0500</lastBuildDate>
+    <title>CIS700</title>
+    <description>(Fall '19) Program Analysis--Foundations and Applications (CIS700 @ Syracuse U)</description>
+    <link>http://kmicinski.com/program-analysis/</link>
+    <atom:link href="http://kmicinski.com/program-analysis/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 20 Dec 2019 18:15:40 -0500</pubDate>
+    <lastBuildDate>Fri, 20 Dec 2019 18:15:40 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
   </channel>
