@@ -37,49 +37,45 @@ layout: page
 - Wednesday: Collecting Semantics and example abstract interpreter
 - **Assigned reading**: "Abstracting Abstract Machines." http://matt.might.net/papers/vanhorn2010abstract.pdf
 
-#### Week 7: Abstracting Abstract Machines (AAM)
+#### Week 7: Imperative Languages and Traditional Dataflow Analysis
 
-- Monday: Abstracting Abstract Machines
+- Monday: Implementing IMP.
 - Wednesday: Implementing AAM in class.
 - **Assigned reading**: "Allocation Characterizes Polyvariance." https://gilray.org/pdf/allocation-polyvariance.pdf
 
-#### Week 8: Analysis Precision, Polyvariance
+#### Week 9: Analysis Precision, Polyvariance
 
 - Monday: Context sensitivity, k-CFA
 - Wendesday: Polyvariance via Allocation
 - **Assigned reading**: "Resolving and Exploiting the k-CFA Paradox." http://matt.might.net/papers/might2010mcfa.pdf
 
-#### Week 9: Object-Orientation and Object Sensitivity
+#### Week 10: Object-Orientation and Object Sensitivity
 
 - Monday: Encoding Objects as Flat Environments
 - Wednesday: m-CFA vs. k-CFA
 - **Assigned reading**: "Pick Your Contexts Well: Understanding Object-Sensitivity." https://yanniss.github.io/typesens-popl11.pdf
 
-#### Week 10: Reachability-based analysis
+#### Week 11: Reachability-based analysis
 
 - Monday / Wednesday:
 - Graph Reachability and IFDS
 - **Assigned reading**: Precise Interprocedural Dataflow Analysis via Graph Reachability
 
-#### Week 11: Call/return matching, Pushdown precision
+#### Week 12: Call/return matching, Pushdown precision
 
 - Monday: Pushdown Precision ala. Reps
 - Wednesday: Pushdown for Free.
 - **Assigned reading**: "Pushdown Control-Flow Analysis for Free." http://matt.might.net/papers/gilray2016pushdown.pdf
 
-#### Week 11: Constraint-Based Analyses
+#### Week 13: Constraint-Based Analyses
 
 - TBD
 
-#### Week 12: Symbolic Execution
+#### Week 14: Symbolic Execution
 
 - TBD
 
-#### Week 13: Abstract Symbolic Execution
+#### Week 15: Abstract Symbolic Execution and Abstracting Definitional Interpreters
 
 - **Assigned Reading** "Higher order symbolic execution for contract verification and refutation"
  - https://www.cambridge.org/core/services/aop-cambridge-core/content/view/129E10B4113242ABB0B7D6890CCFDBC9/S0956796816000216a.pdf/higher_order_symbolic_execution_for_contract_verification_and_refutation.pdf
-
-#### Week 14: Abstracting Definitional Interpreters
-
-- **Assigned Reading**: "Abstracting Definitional Interpreters." https://arxiv.org/pdf/1707.04755.pdf
