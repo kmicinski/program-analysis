@@ -1,8 +1,8 @@
 # Site settings
-title: CS245
-baseurl: "cs245"
+title: CIS700
+baseurl: "program-analysis"
 url: "http://kmicinski.com/"
-description: "(Spring '19) Principles of Programming Languages (CMSC245 at Haverford College)"
+description: "(Fall '19) Program Analysis--Foundations and Applications (CIS700 @ Syracuse U)"
 permalink: pretty
 
 # Build settings
