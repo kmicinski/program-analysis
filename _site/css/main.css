@@ -750,8 +750,9 @@ ul p {
   witdh: 500px; }
 
 .introtext {
-  padding-top: 20px;
-  color: white; }
+  padding-top: 100px;
+  color: white;
+  text-shadow: 3px 3px #000000; }
 
 #practice {
   padding-top: 60px; }
